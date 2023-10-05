@@ -85,7 +85,6 @@ async def role_check(ctx) :
     if nu_time >datetime.timedelta(days=30) :
         await ctx.send("뉴비가 아니시네요")
 
-
 #커스텀명령어 추가기능
 @bot.command(name="추가")
 async def cmd_add(ctx) :
