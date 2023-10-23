@@ -13,4 +13,4 @@ def to_csv(tker : str, per : str, date : str, start_date : str, end_date : str) 
                                 'Adj Close' : data['Adj Close']},
                                 index = data.index)
     
-    df_stock.to_csv('SPY data'+date+'.csv', sep=',', float_format='%.64f')
+    df_stock.to_csv('Spx_data'+date+'.csv', sep=',', float_format='%.64f')

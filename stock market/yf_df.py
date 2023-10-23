@@ -1,6 +1,7 @@
 import pandas as pd
 import yfinance as yf
-def yf_to_df(tker : str, per : str, start_date : str, end_date : str) :
+import csv
+def to_csv(tker : str, per : str, start_date : str, end_date : str) :
 
     data = yf.download(tickers = tker, interval = per, start=start_date, end = end_date)
     df_stock = pd.DataFrame({'High' : data['High'], 
